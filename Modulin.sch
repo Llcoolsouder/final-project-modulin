@@ -127,7 +127,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 3
+Sheet 1 4
 Title "Modulin"
 Date "2017-11-19"
 Rev "1.0"
@@ -591,18 +591,12 @@ Wire Wire Line
 Wire Wire Line
 	4200 5250 4400 5250
 Wire Wire Line
-	5200 5450 5200 5850
-Wire Wire Line
-	5200 5850 5200 6200
+	5200 5450 5200 6200
 Wire Wire Line
 	3950 5450 3750 5450
 Connection ~ 3950 5150
 Wire Wire Line
-	3750 5150 3950 5150
-Wire Wire Line
-	3950 5150 4100 5150
-Wire Wire Line
-	4100 5150 4400 5150
+	3750 5150 4400 5150
 Wire Wire Line
 	5200 5150 5450 5150
 Wire Wire Line
@@ -619,17 +613,11 @@ Wire Wire Line
 Connection ~ 2600 1100
 Connection ~ 2100 1400
 Wire Wire Line
-	1600 1400 2100 1400
+	1600 1400 2600 1400
 Wire Wire Line
-	2100 1400 2600 1400
+	2500 1100 2950 1100
 Wire Wire Line
-	2500 1100 2600 1100
-Wire Wire Line
-	2600 1100 2950 1100
-Wire Wire Line
-	1100 1100 1600 1100
-Wire Wire Line
-	1600 1100 1700 1100
+	1100 1100 1700 1100
 Wire Wire Line
 	4400 5450 4400 5800
 Wire Wire Line
@@ -637,11 +625,7 @@ Wire Wire Line
 Wire Wire Line
 	5250 5350 5200 5350
 Wire Wire Line
-	5250 3850 5250 4650
-Wire Wire Line
-	5250 4650 5250 5350
-Wire Wire Line
-	5250 5350 5250 6150
+	5250 3850 5250 6150
 Wire Wire Line
 	6400 2200 6250 2200
 Wire Wire Line
@@ -655,16 +639,12 @@ Wire Wire Line
 Wire Wire Line
 	7300 3600 7500 3600
 Wire Wire Line
-	6950 3300 7300 3300
-Wire Wire Line
-	7300 3300 7500 3300
+	6950 3300 7500 3300
 Connection ~ 7300 3300
 Wire Wire Line
 	8200 5450 8400 5450
 Wire Wire Line
-	7950 5150 8200 5150
-Wire Wire Line
-	8200 5150 8400 5150
+	7950 5150 8400 5150
 Connection ~ 8200 5150
 Wire Wire Line
 	7950 4950 8050 4950
@@ -700,9 +680,7 @@ Wire Wire Line
 Wire Wire Line
 	3550 4250 3950 4250
 Wire Wire Line
-	3500 3850 3500 4650
-Wire Wire Line
-	3500 4650 3500 5850
+	3500 3850 3500 5850
 Wire Wire Line
 	3500 4650 3950 4650
 Wire Wire Line
@@ -719,9 +697,7 @@ Wire Wire Line
 Wire Wire Line
 	3750 3800 3950 3800
 Wire Wire Line
-	2900 1000 2900 3600
-Wire Wire Line
-	2900 3600 2900 4400
+	2900 1000 2900 4400
 Wire Wire Line
 	2900 3600 3950 3600
 Wire Wire Line
@@ -787,4 +763,10 @@ Wire Wire Line
 	5100 2650 6250 2650
 Wire Wire Line
 	6250 2650 6250 2200
+$Sheet
+S 5950 4250 500  300 
+U 5A18B549
+F0 "MIDI_out" 60
+F1 "MIDI_out.sch" 60
+$EndSheet
 $EndSCHEMATC
