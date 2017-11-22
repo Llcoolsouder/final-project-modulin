@@ -4,6 +4,5 @@ Footage of the orignal instrument can be found [here](https://www.youtube.com/wa
 
 Created by:
 Lonnie L. Souder II
-Jacob Epifano
 
 final-project-modulin created by GitHub Classroom
