@@ -1,0 +1,21 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP DMN63D8LDW-7
+D dual channel Transistor N-MOSFET (logic level)
+K nmos n-mos n-mosfet transistor
+F https://www.diodes.com/assets/Datasheets/DMN63D8LDW.pdf
+$ENDCMP
+#
+$CMP LM7805CT
+D 5V regulator
+K regulator
+F https://www.fairchildsemi.com/datasheets/LM/LM7805.pdf
+$ENDCMP
+#
+$CMP NL27WZ04DFT1G
+D dual package inverter
+K invert
+F http://www.onsemi.com/pub/Collateral/NL27WZ04-D.PDF
+$ENDCMP
+#
+#End Doc Library

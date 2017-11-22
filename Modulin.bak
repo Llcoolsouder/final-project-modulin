@@ -1,57 +1,35 @@
 EESchema Schematic File Version 2
 LIBS:74xgxx
 LIBS:74xx
-LIBS:actel
-LIBS:cmos_ieee
-LIBS:cmos4000
-LIBS:conn
-LIBS:logo
-LIBS:microchip_dspic33dsc
-LIBS:microchip_pic10mcu
-LIBS:microchip_pic12mcu
-LIBS:microchip_pic16mcu
-LIBS:microchip_pic18mcu
-LIBS:microchip_pic32mcu
-LIBS:msp430
-LIBS:MyLib
-LIBS:nxp_armmcu
-LIBS:relays
-LIBS:stm8
-LIBS:stm32
-LIBS:switches
-LIBS:transf
-LIBS:transistors
-LIBS:ttl_ieee
-LIBS:valves
 LIBS:ac-dc
+LIBS:actel
 LIBS:adc-dac
+LIBS:allegro
 LIBS:Altera
 LIBS:analog_devices
 LIBS:analog_switches
 LIBS:atmel
 LIBS:audio
-LIBS:Battery_Management
+LIBS:battery_management
 LIBS:bbd
 LIBS:bosch
 LIBS:brooktre
-LIBS:Connector
+LIBS:cmos_ieee
+LIBS:cmos4000
+LIBS:conn
 LIBS:contrib
 LIBS:cypress
 LIBS:dc-dc
 LIBS:device
 LIBS:digital-audio
-LIBS:Diode
-LIBS:Display
-LIBS:driver_gate
+LIBS:diode
+LIBS:display
 LIBS:dsp
-LIBS:DSP_Microchip_DSPIC33
 LIBS:elec-unifil
 LIBS:ESD_Protection
-LIBS:Espressif
-LIBS:FPGA_Actel
 LIBS:ftdi
 LIBS:gennum
-LIBS:Graphic
+LIBS:graphic_symbols
 LIBS:hc11
 LIBS:infineon
 LIBS:intel
@@ -59,38 +37,30 @@ LIBS:interface
 LIBS:intersil
 LIBS:ir
 LIBS:Lattice
-LIBS:LED
+LIBS:leds
 LIBS:LEM
 LIBS:linear
-LIBS:Logic_74xgxx
-LIBS:Logic_74xx
-LIBS:Logic_CMOS_4000
-LIBS:Logic_CMOS_IEEE
 LIBS:logic_programmable
-LIBS:Logic_TTL_IEEE
 LIBS:maxim
-LIBS:MCU_Microchip_PIC10
-LIBS:MCU_Microchip_PIC12
-LIBS:MCU_Microchip_PIC16
-LIBS:MCU_Microchip_PIC18
-LIBS:MCU_Microchip_PIC24
-LIBS:MCU_Microchip_PIC32
-LIBS:MCU_NXP_Kinetis
-LIBS:MCU_NXP_LPC
-LIBS:MCU_NXP_S08
-LIBS:MCU_ST_STM8
-LIBS:MCU_ST_STM32
-LIBS:MCU_Texas_MSP430
-LIBS:Mechanical
+LIBS:mechanical
 LIBS:memory
 LIBS:microchip
+LIBS:microchip_dspic33dsc
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic24mcu
+LIBS:microchip_pic32mcu
 LIBS:microcontrollers
 LIBS:modules
-LIBS:Motor
 LIBS:motor_drivers
 LIBS:motorola
+LIBS:motors
+LIBS:msp430
 LIBS:nordicsemi
 LIBS:nxp
+LIBS:nxp_armmcu
 LIBS:onsemi
 LIBS:opto
 LIBS:Oscillators
@@ -101,20 +71,22 @@ LIBS:powerint
 LIBS:pspice
 LIBS:references
 LIBS:regul
-LIBS:Relay
+LIBS:relays
 LIBS:rfcom
 LIBS:RFSolutions
-LIBS:Sensor_Current
 LIBS:sensors
 LIBS:silabs
 LIBS:siliconi
+LIBS:stm8
+LIBS:stm32
 LIBS:supertex
-LIBS:Switch
+LIBS:switches
 LIBS:texas
-LIBS:Transformer
-LIBS:Transistor
+LIBS:transf
+LIBS:transistors
 LIBS:triac_thyristor
-LIBS:Valve
+LIBS:ttl_ieee
+LIBS:valves
 LIBS:video
 LIBS:wiznet
 LIBS:Worldsemi
@@ -127,7 +99,7 @@ EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 1 4
+Sheet 1 5
 Title "Modulin"
 Date "2017-11-19"
 Rev "1.0"
@@ -217,23 +189,23 @@ $EndComp
 $Comp
 L Conn_01x03_Male J?
 U 1 1 5A0CEC85
-P 3150 1000
-F 0 "J?" H 3150 1200 50  0000 C CNN
-F 1 "Conn_01x03_Male" V 3050 1150 50  0000 C CNN
-F 2 "" H 3150 1000 50  0001 C CNN
-F 3 "" H 3150 1000 50  0001 C CNN
-	1    3150 1000
+P 3350 1000
+F 0 "J?" H 3350 1200 50  0000 C CNN
+F 1 "Conn_01x03_Male" V 3250 1150 50  0000 C CNN
+F 2 "" H 3350 1000 50  0001 C CNN
+F 3 "" H 3350 1000 50  0001 C CNN
+	1    3350 1000
 	-1   0    0    -1  
 $EndComp
 $Comp
 L +3.3V #PWR?
 U 1 1 5A0CEFD5
-P 2950 900
-F 0 "#PWR?" H 2950 750 50  0001 C CNN
-F 1 "+3.3V" H 2950 1040 50  0000 C CNN
-F 2 "" H 2950 900 50  0001 C CNN
-F 3 "" H 2950 900 50  0001 C CNN
-	1    2950 900 
+P 3150 900
+F 0 "#PWR?" H 3150 750 50  0001 C CNN
+F 1 "+3.3V" H 3150 1040 50  0000 C CNN
+F 2 "" H 3150 900 50  0001 C CNN
+F 3 "" H 3150 900 50  0001 C CNN
+	1    3150 900 
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -258,8 +230,6 @@ F 3 "" H 600 1100 50  0001 C CNN
 	1    600  1100
 	1    0    0    -1  
 $EndComp
-Text Label 1650 850  1    60   ~ 0
-DVCC
 $Comp
 L Conn_01x03_Female J?
 U 1 1 5A0D392D
@@ -271,10 +241,6 @@ F 3 "" H 6600 2200 50  0001 C CNN
 	1    6600 2200
 	1    0    0    -1  
 $EndComp
-Text Label 6400 2000 1    60   ~ 0
-DVCC
-Text Label 3750 5150 0    60   ~ 0
-DVCC
 $Comp
 L C C?
 U 1 1 5A0E1DD4
@@ -484,8 +450,6 @@ F 3 "" H 6050 2200 50  0001 C CNN
 	1    6050 2200
 	1    0    0    -1  
 $EndComp
-Text Label 5850 2000 1    60   ~ 0
-DVCC
 $Comp
 L GNDA #PWR?
 U 1 1 5A123A45
@@ -552,23 +516,23 @@ $EndSheet
 $Comp
 L GNDD #PWR?
 U 1 1 5A15B875
-P 3150 4450
-F 0 "#PWR?" H 3150 4200 50  0001 C CNN
-F 1 "GNDD" H 3150 4325 50  0000 C CNN
-F 2 "" H 3150 4450 50  0001 C CNN
-F 3 "" H 3150 4450 50  0001 C CNN
-	1    3150 4450
+P 3250 4450
+F 0 "#PWR?" H 3250 4200 50  0001 C CNN
+F 1 "GNDD" H 3250 4325 50  0000 C CNN
+F 2 "" H 3250 4450 50  0001 C CNN
+F 3 "" H 3250 4450 50  0001 C CNN
+	1    3250 4450
 	1    0    0    -1  
 $EndComp
 $Comp
 L GNDD #PWR?
 U 1 1 5A15B9A1
-P 3150 3650
-F 0 "#PWR?" H 3150 3400 50  0001 C CNN
-F 1 "GNDD" H 3150 3525 50  0000 C CNN
-F 2 "" H 3150 3650 50  0001 C CNN
-F 3 "" H 3150 3650 50  0001 C CNN
-	1    3150 3650
+P 3250 3650
+F 0 "#PWR?" H 3250 3400 50  0001 C CNN
+F 1 "GNDD" H 3250 3525 50  0000 C CNN
+F 2 "" H 3250 3650 50  0001 C CNN
+F 3 "" H 3250 3650 50  0001 C CNN
+	1    3250 3650
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -591,12 +555,18 @@ Wire Wire Line
 Wire Wire Line
 	4200 5250 4400 5250
 Wire Wire Line
-	5200 5450 5200 6200
+	5200 5450 5200 5850
+Wire Wire Line
+	5200 5850 5200 6200
 Wire Wire Line
 	3950 5450 3750 5450
 Connection ~ 3950 5150
 Wire Wire Line
-	3750 5150 4400 5150
+	3750 5150 3950 5150
+Wire Wire Line
+	3950 5150 4100 5150
+Wire Wire Line
+	4100 5150 4400 5150
 Wire Wire Line
 	5200 5150 5450 5150
 Wire Wire Line
@@ -609,15 +579,23 @@ Wire Wire Line
 Wire Wire Line
 	600  1100 600  1300
 Wire Wire Line
-	2950 1000 2900 1000
+	3150 1000 3100 1000
 Connection ~ 2600 1100
 Connection ~ 2100 1400
 Wire Wire Line
-	1600 1400 2600 1400
+	1600 1400 2100 1400
 Wire Wire Line
-	2500 1100 2950 1100
+	2100 1400 2600 1400
 Wire Wire Line
-	1100 1100 1700 1100
+	2500 1100 2600 1100
+Wire Wire Line
+	2600 1100 3150 1100
+Wire Wire Line
+	1100 1100 1150 1100
+Wire Wire Line
+	1150 1100 1600 1100
+Wire Wire Line
+	1600 1100 1700 1100
 Wire Wire Line
 	4400 5450 4400 5800
 Wire Wire Line
@@ -625,7 +603,11 @@ Wire Wire Line
 Wire Wire Line
 	5250 5350 5200 5350
 Wire Wire Line
-	5250 3850 5250 6150
+	5250 3850 5250 4650
+Wire Wire Line
+	5250 4650 5250 5350
+Wire Wire Line
+	5250 5350 5250 6150
 Wire Wire Line
 	6400 2200 6250 2200
 Wire Wire Line
@@ -639,12 +621,16 @@ Wire Wire Line
 Wire Wire Line
 	7300 3600 7500 3600
 Wire Wire Line
-	6950 3300 7500 3300
+	6950 3300 7300 3300
+Wire Wire Line
+	7300 3300 7500 3300
 Connection ~ 7300 3300
 Wire Wire Line
 	8200 5450 8400 5450
 Wire Wire Line
-	7950 5150 8400 5150
+	7950 5150 8200 5150
+Wire Wire Line
+	8200 5150 8400 5150
 Connection ~ 8200 5150
 Wire Wire Line
 	7950 4950 8050 4950
@@ -680,7 +666,9 @@ Wire Wire Line
 Wire Wire Line
 	3550 4250 3950 4250
 Wire Wire Line
-	3500 3850 3500 5850
+	3500 3850 3500 4650
+Wire Wire Line
+	3500 4650 3500 5850
 Wire Wire Line
 	3500 4650 3950 4650
 Wire Wire Line
@@ -697,16 +685,18 @@ Wire Wire Line
 Wire Wire Line
 	3750 3800 3950 3800
 Wire Wire Line
-	2900 1000 2900 4400
+	3100 1000 3100 3600
 Wire Wire Line
-	2900 3600 3950 3600
+	3100 3600 3100 4400
 Wire Wire Line
-	2900 4400 3950 4400
-Connection ~ 2900 3600
+	3100 3600 3950 3600
 Wire Wire Line
-	3150 3650 3950 3650
+	3100 4400 3950 4400
+Connection ~ 3100 3600
 Wire Wire Line
-	3150 4450 3950 4450
+	3250 3650 3950 3650
+Wire Wire Line
+	3250 4450 3950 4450
 Wire Wire Line
 	5250 4650 4450 4650
 Connection ~ 5250 5350
@@ -764,9 +754,105 @@ Wire Wire Line
 Wire Wire Line
 	6250 2650 6250 2200
 $Sheet
-S 5950 4250 500  300 
+S 5700 4350 550  200 
 U 5A18B549
 F0 "MIDI_out" 60
 F1 "MIDI_out.sch" 60
+F2 "DataOut" I L 5700 4450 39 
 $EndSheet
+Text GLabel 3100 1000 0    60   Input ~ 0
+DVCC
+Wire Wire Line
+	4450 4450 5700 4450
+$Comp
+L LM7805CT U?
+U 1 1 5A166252
+P 1650 2050
+F 0 "U?" H 1350 2400 50  0000 L CNN
+F 1 "LM7805CT" H 1350 2300 50  0000 L CNN
+F 2 "TO-220-3" H 1800 1850 50  0001 L CIN
+F 3 "" H 1650 2050 50  0001 C CNN
+	1    1650 2050
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5A16661A
+P 1150 2100
+F 0 "C?" H 1175 2200 50  0000 L CNN
+F 1 "100n" H 1175 2000 50  0000 L CNN
+F 2 "" H 1188 1950 50  0001 C CNN
+F 3 "" H 1150 2100 50  0001 C CNN
+	1    1150 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C?
+U 1 1 5A166620
+P 2150 2100
+F 0 "C?" H 2175 2200 50  0000 L CNN
+F 1 "10u" H 2175 2000 50  0000 L CNN
+F 2 "" H 2188 1950 50  0001 C CNN
+F 3 "" H 2150 2100 50  0001 C CNN
+	1    2150 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR?
+U 1 1 5A166626
+P 1650 2250
+F 0 "#PWR?" H 1650 2000 50  0001 C CNN
+F 1 "GNDD" H 1650 2125 50  0000 C CNN
+F 2 "" H 1650 2250 50  0001 C CNN
+F 3 "" H 1650 2250 50  0001 C CNN
+	1    1650 2250
+	1    0    0    -1  
+$EndComp
+Connection ~ 1150 1950
+Connection ~ 2150 1950
+Connection ~ 1650 2250
+Wire Wire Line
+	1150 2250 1650 2250
+Wire Wire Line
+	1650 2250 2150 2250
+Wire Wire Line
+	2050 1950 2150 1950
+Wire Wire Line
+	1150 1950 1250 1950
+Wire Wire Line
+	1150 1950 1150 1100
+Connection ~ 1150 1100
+$Comp
+L +5V #PWR?
+U 1 1 5A169627
+P 2150 1950
+F 0 "#PWR?" H 2150 1800 50  0001 C CNN
+F 1 "+5V" H 2150 2090 50  0000 C CNN
+F 2 "" H 2150 1950 50  0001 C CNN
+F 3 "" H 2150 1950 50  0001 C CNN
+	1    2150 1950
+	1    0    0    -1  
+$EndComp
+$Sheet
+S 1200 4050 550  700 
+U 5A16BDEE
+F0 "RGB_Encoder" 60
+F1 "RGB_Encoder.sch" 60
+F2 "PWM1" I R 1750 4150 60 
+F3 "PWM2" I R 1750 4250 60 
+F4 "PWM3" I R 1750 4350 60 
+F5 "Btn" I R 1750 4450 60 
+F6 "A" I R 1750 4550 60 
+F7 "B" I R 1750 4650 60 
+$EndSheet
+Text GLabel 7300 3300 1    20   Input ~ 0
+DVCC
+Text GLabel 3750 5150 1    20   Input ~ 0
+DVCC
+Text GLabel 8400 5150 1    20   Input ~ 0
+DVCC
+Text GLabel 6400 2000 1    20   Input ~ 0
+DVCC
+Text GLabel 5850 2000 1    20   Input ~ 0
+DVCC
 $EndSCHEMATC
