@@ -1,35 +1,34 @@
 EESchema Schematic File Version 2
-LIBS:74xgxx
-LIBS:74xx
+LIBS:Modulin-rescue
 LIBS:ac-dc
-LIBS:actel
 LIBS:adc-dac
-LIBS:allegro
 LIBS:Altera
 LIBS:analog_devices
 LIBS:analog_switches
 LIBS:atmel
 LIBS:audio
-LIBS:battery_management
+LIBS:Battery_Management
 LIBS:bbd
 LIBS:bosch
 LIBS:brooktre
-LIBS:cmos_ieee
-LIBS:cmos4000
-LIBS:conn
+LIBS:Connector
 LIBS:contrib
 LIBS:cypress
 LIBS:dc-dc
 LIBS:device
 LIBS:digital-audio
-LIBS:diode
-LIBS:display
+LIBS:Diode
+LIBS:Display
+LIBS:driver_gate
 LIBS:dsp
+LIBS:DSP_Microchip_DSPIC33
 LIBS:elec-unifil
 LIBS:ESD_Protection
+LIBS:Espressif
+LIBS:FPGA_Actel
 LIBS:ftdi
 LIBS:gennum
-LIBS:graphic_symbols
+LIBS:Graphic
 LIBS:hc11
 LIBS:infineon
 LIBS:intel
@@ -37,30 +36,38 @@ LIBS:interface
 LIBS:intersil
 LIBS:ir
 LIBS:Lattice
-LIBS:leds
+LIBS:LED
 LIBS:LEM
 LIBS:linear
+LIBS:Logic_74xgxx
+LIBS:Logic_74xx
+LIBS:Logic_CMOS_4000
+LIBS:Logic_CMOS_IEEE
 LIBS:logic_programmable
+LIBS:Logic_TTL_IEEE
 LIBS:maxim
-LIBS:mechanical
+LIBS:MCU_Microchip_PIC10
+LIBS:MCU_Microchip_PIC12
+LIBS:MCU_Microchip_PIC16
+LIBS:MCU_Microchip_PIC18
+LIBS:MCU_Microchip_PIC24
+LIBS:MCU_Microchip_PIC32
+LIBS:MCU_NXP_Kinetis
+LIBS:MCU_NXP_LPC
+LIBS:MCU_NXP_S08
+LIBS:MCU_ST_STM8
+LIBS:MCU_ST_STM32
+LIBS:MCU_Texas_MSP430
+LIBS:Mechanical
 LIBS:memory
 LIBS:microchip
-LIBS:microchip_dspic33dsc
-LIBS:microchip_pic10mcu
-LIBS:microchip_pic12mcu
-LIBS:microchip_pic16mcu
-LIBS:microchip_pic18mcu
-LIBS:microchip_pic24mcu
-LIBS:microchip_pic32mcu
 LIBS:microcontrollers
 LIBS:modules
+LIBS:Motor
 LIBS:motor_drivers
 LIBS:motorola
-LIBS:motors
-LIBS:msp430
 LIBS:nordicsemi
 LIBS:nxp
-LIBS:nxp_armmcu
 LIBS:onsemi
 LIBS:opto
 LIBS:Oscillators
@@ -71,22 +78,20 @@ LIBS:powerint
 LIBS:pspice
 LIBS:references
 LIBS:regul
-LIBS:relays
+LIBS:Relay
 LIBS:rfcom
 LIBS:RFSolutions
+LIBS:Sensor_Current
 LIBS:sensors
 LIBS:silabs
 LIBS:siliconi
-LIBS:stm8
-LIBS:stm32
 LIBS:supertex
-LIBS:switches
+LIBS:Switch
 LIBS:texas
-LIBS:transf
-LIBS:transistors
+LIBS:Transformer
+LIBS:Transistor
 LIBS:triac_thyristor
-LIBS:ttl_ieee
-LIBS:valves
+LIBS:Valve
 LIBS:video
 LIBS:wiznet
 LIBS:Worldsemi
@@ -94,6 +99,28 @@ LIBS:Xicor
 LIBS:xilinx
 LIBS:zetex
 LIBS:Zilog
+LIBS:74xgxx
+LIBS:74xx
+LIBS:actel
+LIBS:cmos_ieee
+LIBS:cmos4000
+LIBS:conn
+LIBS:microchip_dspic33dsc
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic32mcu
+LIBS:msp430
+LIBS:nxp_armmcu
+LIBS:relays
+LIBS:stm8
+LIBS:stm32
+LIBS:switches
+LIBS:transf
+LIBS:transistors
+LIBS:ttl_ieee
+LIBS:valves
 LIBS:MyLib
 LIBS:Modulin-cache
 EELAYER 25 0
@@ -122,7 +149,7 @@ F 3 "" H 8350 5100 60  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L MCP48FVB21-E/UN U4
+L MCP48FVB21-E/UN-RESCUE-Modulin U4
 U 1 1 5A0CCB1F
 P 6800 3550
 F 0 "U4" H 7000 3250 60  0000 C CNN
@@ -273,28 +300,6 @@ F 1 "GNDD" H 4450 5425 50  0000 C CNN
 F 2 "" H 4450 5550 50  0001 C CNN
 F 3 "" H 4450 5550 50  0001 C CNN
 	1    4450 5550
-	-1   0    0    -1  
-$EndComp
-$Comp
-L GNDA #PWR05
-U 1 1 5A0E2D61
-P 5700 5150
-F 0 "#PWR05" H 5700 4900 50  0001 C CNN
-F 1 "GNDA" H 5700 5000 50  0000 C CNN
-F 2 "" H 5700 5150 50  0001 C CNN
-F 3 "" H 5700 5150 50  0001 C CNN
-	1    5700 5150
-	-1   0    0    -1  
-$EndComp
-$Comp
-L GNDA #PWR06
-U 1 1 5A0E2DAB
-P 4000 5450
-F 0 "#PWR06" H 4000 5200 50  0001 C CNN
-F 1 "GNDA" H 4000 5300 50  0000 C CNN
-F 2 "" H 4000 5450 50  0001 C CNN
-F 3 "" H 4000 5450 50  0001 C CNN
-	1    4000 5450
 	-1   0    0    -1  
 $EndComp
 $Comp
@@ -912,28 +917,6 @@ Connection ~ 3350 1450
 Connection ~ 1150 1450
 Connection ~ 3400 700 
 $Comp
-L GNDA #PWR023
-U 1 1 5A184A3D
-P 4050 900
-F 0 "#PWR023" H 4050 650 50  0001 C CNN
-F 1 "GNDA" H 4050 750 50  0000 C CNN
-F 2 "" H 4050 900 50  0001 C CNN
-F 3 "" H 4050 900 50  0001 C CNN
-	1    4050 900 
-	1    0    0    -1  
-$EndComp
-$Comp
-L PWR_FLAG #FLG024
-U 1 1 5A184B9B
-P 4050 900
-F 0 "#FLG024" H 4050 975 50  0001 C CNN
-F 1 "PWR_FLAG" H 4050 1050 50  0000 C CNN
-F 2 "" H 4050 900 50  0001 C CNN
-F 3 "" H 4050 900 50  0001 C CNN
-	1    4050 900 
-	1    0    0    -1  
-$EndComp
-$Comp
 L GNDD #PWR?
 U 1 1 5A1899B3
 P 6100 2300
@@ -953,6 +936,28 @@ F 1 "GNDD" H 6650 2175 50  0000 C CNN
 F 2 "" H 6650 2300 50  0001 C CNN
 F 3 "" H 6650 2300 50  0001 C CNN
 	1    6650 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR?
+U 1 1 5A1B222B
+P 4000 5450
+F 0 "#PWR?" H 4000 5200 50  0001 C CNN
+F 1 "GNDD" H 4000 5325 50  0000 C CNN
+F 2 "" H 4000 5450 50  0001 C CNN
+F 3 "" H 4000 5450 50  0001 C CNN
+	1    4000 5450
+	1    0    0    -1  
+$EndComp
+$Comp
+L GNDD #PWR?
+U 1 1 5A1B2483
+P 5700 5150
+F 0 "#PWR?" H 5700 4900 50  0001 C CNN
+F 1 "GNDD" H 5700 5025 50  0000 C CNN
+F 2 "" H 5700 5150 50  0001 C CNN
+F 3 "" H 5700 5150 50  0001 C CNN
+	1    5700 5150
 	1    0    0    -1  
 $EndComp
 $EndSCHEMATC
