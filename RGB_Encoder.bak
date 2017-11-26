@@ -1,34 +1,35 @@
 EESchema Schematic File Version 2
-LIBS:MyLib
+LIBS:74xgxx
+LIBS:74xx
 LIBS:ac-dc
+LIBS:actel
 LIBS:adc-dac
+LIBS:allegro
 LIBS:Altera
 LIBS:analog_devices
 LIBS:analog_switches
 LIBS:atmel
 LIBS:audio
-LIBS:Battery_Management
+LIBS:battery_management
 LIBS:bbd
 LIBS:bosch
 LIBS:brooktre
-LIBS:Connector
+LIBS:cmos_ieee
+LIBS:cmos4000
+LIBS:conn
 LIBS:contrib
 LIBS:cypress
 LIBS:dc-dc
 LIBS:device
 LIBS:digital-audio
-LIBS:Diode
-LIBS:Display
-LIBS:driver_gate
+LIBS:diode
+LIBS:display
 LIBS:dsp
-LIBS:DSP_Microchip_DSPIC33
 LIBS:elec-unifil
 LIBS:ESD_Protection
-LIBS:Espressif
-LIBS:FPGA_Actel
 LIBS:ftdi
 LIBS:gennum
-LIBS:Graphic
+LIBS:graphic_symbols
 LIBS:hc11
 LIBS:infineon
 LIBS:intel
@@ -36,38 +37,30 @@ LIBS:interface
 LIBS:intersil
 LIBS:ir
 LIBS:Lattice
-LIBS:LED
+LIBS:leds
 LIBS:LEM
 LIBS:linear
-LIBS:Logic_74xgxx
-LIBS:Logic_74xx
-LIBS:Logic_CMOS_4000
-LIBS:Logic_CMOS_IEEE
 LIBS:logic_programmable
-LIBS:Logic_TTL_IEEE
 LIBS:maxim
-LIBS:MCU_Microchip_PIC10
-LIBS:MCU_Microchip_PIC12
-LIBS:MCU_Microchip_PIC16
-LIBS:MCU_Microchip_PIC18
-LIBS:MCU_Microchip_PIC24
-LIBS:MCU_Microchip_PIC32
-LIBS:MCU_NXP_Kinetis
-LIBS:MCU_NXP_LPC
-LIBS:MCU_NXP_S08
-LIBS:MCU_ST_STM8
-LIBS:MCU_ST_STM32
-LIBS:MCU_Texas_MSP430
-LIBS:Mechanical
+LIBS:mechanical
 LIBS:memory
 LIBS:microchip
+LIBS:microchip_dspic33dsc
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic24mcu
+LIBS:microchip_pic32mcu
 LIBS:microcontrollers
 LIBS:modules
-LIBS:Motor
 LIBS:motor_drivers
 LIBS:motorola
+LIBS:motors
+LIBS:msp430
 LIBS:nordicsemi
 LIBS:nxp
+LIBS:nxp_armmcu
 LIBS:onsemi
 LIBS:opto
 LIBS:Oscillators
@@ -78,20 +71,22 @@ LIBS:powerint
 LIBS:pspice
 LIBS:references
 LIBS:regul
-LIBS:Relay
+LIBS:relays
 LIBS:rfcom
 LIBS:RFSolutions
-LIBS:Sensor_Current
 LIBS:sensors
 LIBS:silabs
 LIBS:siliconi
+LIBS:stm8
+LIBS:stm32
 LIBS:supertex
-LIBS:Switch
+LIBS:switches
 LIBS:texas
-LIBS:Transformer
-LIBS:Transistor
+LIBS:transf
+LIBS:transistors
 LIBS:triac_thyristor
-LIBS:Valve
+LIBS:ttl_ieee
+LIBS:valves
 LIBS:video
 LIBS:wiznet
 LIBS:Worldsemi
@@ -99,29 +94,7 @@ LIBS:Xicor
 LIBS:xilinx
 LIBS:zetex
 LIBS:Zilog
-LIBS:74xgxx
-LIBS:74xx
-LIBS:actel
-LIBS:cmos_ieee
-LIBS:cmos4000
-LIBS:conn
-LIBS:logo
-LIBS:microchip_dspic33dsc
-LIBS:microchip_pic10mcu
-LIBS:microchip_pic12mcu
-LIBS:microchip_pic16mcu
-LIBS:microchip_pic18mcu
-LIBS:microchip_pic32mcu
-LIBS:msp430
-LIBS:nxp_armmcu
-LIBS:relays
-LIBS:stm8
-LIBS:stm32
-LIBS:switches
-LIBS:transf
-LIBS:transistors
-LIBS:ttl_ieee
-LIBS:valves
+LIBS:MyLib
 LIBS:Modulin-cache
 EELAYER 25 0
 EELAYER END
@@ -226,10 +199,10 @@ F 3 "" H 6800 2950 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +5V #PWR029
+L +5V #PWR036
 U 1 1 5A16CD95
 P 7450 2750
-F 0 "#PWR029" H 7450 2600 50  0001 C CNN
+F 0 "#PWR036" H 7450 2600 50  0001 C CNN
 F 1 "+5V" H 7450 2890 50  0000 C CNN
 F 2 "" H 7450 2750 50  0001 C CNN
 F 3 "" H 7450 2750 50  0001 C CNN
@@ -259,10 +232,10 @@ F 3 "" H 5350 3350 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GNDD #PWR030
+L GNDD #PWR037
 U 1 1 5A16D49D
 P 4450 3700
-F 0 "#PWR030" H 4450 3450 50  0001 C CNN
+F 0 "#PWR037" H 4450 3450 50  0001 C CNN
 F 1 "GNDD" H 4450 3575 50  0000 C CNN
 F 2 "" H 4450 3700 50  0001 C CNN
 F 3 "" H 4450 3700 50  0001 C CNN
@@ -270,10 +243,10 @@ F 3 "" H 4450 3700 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDD #PWR031
+L GNDD #PWR038
 U 1 1 5A16D4C5
 P 5250 3700
-F 0 "#PWR031" H 5250 3450 50  0001 C CNN
+F 0 "#PWR038" H 5250 3450 50  0001 C CNN
 F 1 "GNDD" H 5250 3575 50  0000 C CNN
 F 2 "" H 5250 3700 50  0001 C CNN
 F 3 "" H 5250 3700 50  0001 C CNN
@@ -292,10 +265,10 @@ F 3 "" H 6900 3350 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 $Comp
-L GNDD #PWR032
+L GNDD #PWR039
 U 1 1 5A16D798
 P 6800 3700
-F 0 "#PWR032" H 6800 3450 50  0001 C CNN
+F 0 "#PWR039" H 6800 3450 50  0001 C CNN
 F 1 "GNDD" H 6800 3575 50  0000 C CNN
 F 2 "" H 6800 3700 50  0001 C CNN
 F 3 "" H 6800 3700 50  0001 C CNN
@@ -314,10 +287,10 @@ F 3 "" H 4800 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDD #PWR033
+L GNDD #PWR040
 U 1 1 5A16D8FF
 P 4800 3700
-F 0 "#PWR033" H 4800 3450 50  0001 C CNN
+F 0 "#PWR040" H 4800 3450 50  0001 C CNN
 F 1 "GNDD" H 4800 3575 50  0000 C CNN
 F 2 "" H 4800 3700 50  0001 C CNN
 F 3 "" H 4800 3700 50  0001 C CNN
@@ -336,10 +309,10 @@ F 3 "" H 5600 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDD #PWR034
+L GNDD #PWR041
 U 1 1 5A16D9B0
 P 5600 3700
-F 0 "#PWR034" H 5600 3450 50  0001 C CNN
+F 0 "#PWR041" H 5600 3450 50  0001 C CNN
 F 1 "GNDD" H 5600 3575 50  0000 C CNN
 F 2 "" H 5600 3700 50  0001 C CNN
 F 3 "" H 5600 3700 50  0001 C CNN
@@ -358,10 +331,10 @@ F 3 "" H 7150 3550 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDD #PWR035
+L GNDD #PWR042
 U 1 1 5A16DA08
 P 7150 3700
-F 0 "#PWR035" H 7150 3450 50  0001 C CNN
+F 0 "#PWR042" H 7150 3450 50  0001 C CNN
 F 1 "GNDD" H 7150 3575 50  0000 C CNN
 F 2 "" H 7150 3700 50  0001 C CNN
 F 3 "" H 7150 3700 50  0001 C CNN
@@ -408,10 +381,10 @@ F 3 "" H 6250 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDD #PWR036
+L GNDD #PWR043
 U 1 1 5A174295
 P 5850 3450
-F 0 "#PWR036" H 5850 3200 50  0001 C CNN
+F 0 "#PWR043" H 5850 3200 50  0001 C CNN
 F 1 "GNDD" H 5850 3325 50  0000 C CNN
 F 2 "" H 5850 3450 50  0001 C CNN
 F 3 "" H 5850 3450 50  0001 C CNN
@@ -419,10 +392,10 @@ F 3 "" H 5850 3450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDD #PWR037
+L GNDD #PWR044
 U 1 1 5A1742CB
 P 6250 3450
-F 0 "#PWR037" H 6250 3200 50  0001 C CNN
+F 0 "#PWR044" H 6250 3200 50  0001 C CNN
 F 1 "GNDD" H 6250 3325 50  0000 C CNN
 F 2 "" H 6250 3450 50  0001 C CNN
 F 3 "" H 6250 3450 50  0001 C CNN
@@ -467,10 +440,10 @@ $EndComp
 Text GLabel 5850 5150 3    39   Input ~ 0
 DVCC
 $Comp
-L GNDD #PWR038
+L GNDD #PWR045
 U 1 1 5A1749D7
 P 5850 4650
-F 0 "#PWR038" H 5850 4400 50  0001 C CNN
+F 0 "#PWR045" H 5850 4400 50  0001 C CNN
 F 1 "GNDD" H 5850 4525 50  0000 C CNN
 F 2 "" H 5850 4650 50  0001 C CNN
 F 3 "" H 5850 4650 50  0001 C CNN
@@ -544,10 +517,10 @@ F 3 "" H 4600 5300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDD #PWR039
+L GNDD #PWR046
 U 1 1 5A174E88
 P 7100 5450
-F 0 "#PWR039" H 7100 5200 50  0001 C CNN
+F 0 "#PWR046" H 7100 5200 50  0001 C CNN
 F 1 "GNDD" H 7100 5325 50  0000 C CNN
 F 2 "" H 7100 5450 50  0001 C CNN
 F 3 "" H 7100 5450 50  0001 C CNN
@@ -555,10 +528,10 @@ F 3 "" H 7100 5450 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDD #PWR040
+L GNDD #PWR047
 U 1 1 5A174ED0
 P 4600 5450
-F 0 "#PWR040" H 4600 5200 50  0001 C CNN
+F 0 "#PWR047" H 4600 5200 50  0001 C CNN
 F 1 "GNDD" H 4600 5325 50  0000 C CNN
 F 2 "" H 4600 5450 50  0001 C CNN
 F 3 "" H 4600 5450 50  0001 C CNN

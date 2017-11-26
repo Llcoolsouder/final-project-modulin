@@ -1,34 +1,35 @@
 EESchema Schematic File Version 2
-LIBS:MyLib
+LIBS:74xgxx
+LIBS:74xx
 LIBS:ac-dc
+LIBS:actel
 LIBS:adc-dac
+LIBS:allegro
 LIBS:Altera
 LIBS:analog_devices
 LIBS:analog_switches
 LIBS:atmel
 LIBS:audio
-LIBS:Battery_Management
+LIBS:battery_management
 LIBS:bbd
 LIBS:bosch
 LIBS:brooktre
-LIBS:Connector
+LIBS:cmos_ieee
+LIBS:cmos4000
+LIBS:conn
 LIBS:contrib
 LIBS:cypress
 LIBS:dc-dc
 LIBS:device
 LIBS:digital-audio
-LIBS:Diode
-LIBS:Display
-LIBS:driver_gate
+LIBS:diode
+LIBS:display
 LIBS:dsp
-LIBS:DSP_Microchip_DSPIC33
 LIBS:elec-unifil
 LIBS:ESD_Protection
-LIBS:Espressif
-LIBS:FPGA_Actel
 LIBS:ftdi
 LIBS:gennum
-LIBS:Graphic
+LIBS:graphic_symbols
 LIBS:hc11
 LIBS:infineon
 LIBS:intel
@@ -36,38 +37,30 @@ LIBS:interface
 LIBS:intersil
 LIBS:ir
 LIBS:Lattice
-LIBS:LED
+LIBS:leds
 LIBS:LEM
 LIBS:linear
-LIBS:Logic_74xgxx
-LIBS:Logic_74xx
-LIBS:Logic_CMOS_4000
-LIBS:Logic_CMOS_IEEE
 LIBS:logic_programmable
-LIBS:Logic_TTL_IEEE
 LIBS:maxim
-LIBS:MCU_Microchip_PIC10
-LIBS:MCU_Microchip_PIC12
-LIBS:MCU_Microchip_PIC16
-LIBS:MCU_Microchip_PIC18
-LIBS:MCU_Microchip_PIC24
-LIBS:MCU_Microchip_PIC32
-LIBS:MCU_NXP_Kinetis
-LIBS:MCU_NXP_LPC
-LIBS:MCU_NXP_S08
-LIBS:MCU_ST_STM8
-LIBS:MCU_ST_STM32
-LIBS:MCU_Texas_MSP430
-LIBS:Mechanical
+LIBS:mechanical
 LIBS:memory
 LIBS:microchip
+LIBS:microchip_dspic33dsc
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic24mcu
+LIBS:microchip_pic32mcu
 LIBS:microcontrollers
 LIBS:modules
-LIBS:Motor
 LIBS:motor_drivers
 LIBS:motorola
+LIBS:motors
+LIBS:msp430
 LIBS:nordicsemi
 LIBS:nxp
+LIBS:nxp_armmcu
 LIBS:onsemi
 LIBS:opto
 LIBS:Oscillators
@@ -78,20 +71,22 @@ LIBS:powerint
 LIBS:pspice
 LIBS:references
 LIBS:regul
-LIBS:Relay
+LIBS:relays
 LIBS:rfcom
 LIBS:RFSolutions
-LIBS:Sensor_Current
 LIBS:sensors
 LIBS:silabs
 LIBS:siliconi
+LIBS:stm8
+LIBS:stm32
 LIBS:supertex
-LIBS:Switch
+LIBS:switches
 LIBS:texas
-LIBS:Transformer
-LIBS:Transistor
+LIBS:transf
+LIBS:transistors
 LIBS:triac_thyristor
-LIBS:Valve
+LIBS:ttl_ieee
+LIBS:valves
 LIBS:video
 LIBS:wiznet
 LIBS:Worldsemi
@@ -99,35 +94,13 @@ LIBS:Xicor
 LIBS:xilinx
 LIBS:zetex
 LIBS:Zilog
-LIBS:74xgxx
-LIBS:74xx
-LIBS:actel
-LIBS:cmos_ieee
-LIBS:cmos4000
-LIBS:conn
-LIBS:logo
-LIBS:microchip_dspic33dsc
-LIBS:microchip_pic10mcu
-LIBS:microchip_pic12mcu
-LIBS:microchip_pic16mcu
-LIBS:microchip_pic18mcu
-LIBS:microchip_pic32mcu
-LIBS:msp430
-LIBS:nxp_armmcu
-LIBS:relays
-LIBS:stm8
-LIBS:stm32
-LIBS:switches
-LIBS:transf
-LIBS:transistors
-LIBS:ttl_ieee
-LIBS:valves
+LIBS:MyLib
 LIBS:Modulin-cache
 EELAYER 25 0
 EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
-Sheet 2 6
+Sheet 3 6
 Title ""
 Date ""
 Rev ""
@@ -177,12 +150,12 @@ F 3 "" H 4650 3900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDD #PWR019
+L GNDD #PWR025
 U 1 1 5A14853F
 P 4650 4050
-AR Path="/5A1481F4/5A14853F" Ref="#PWR019"  Part="1" 
-AR Path="/5A150559/5A14853F" Ref="#PWR023"  Part="1" 
-F 0 "#PWR019" H 4650 3800 50  0001 C CNN
+AR Path="/5A1481F4/5A14853F" Ref="#PWR025"  Part="1" 
+AR Path="/5A150559/5A14853F" Ref="#PWR029"  Part="1" 
+F 0 "#PWR025" H 4650 3800 50  0001 C CNN
 F 1 "GNDD" H 4650 3925 50  0000 C CNN
 F 2 "" H 4650 4050 50  0001 C CNN
 F 3 "" H 4650 4050 50  0001 C CNN
@@ -232,12 +205,12 @@ F 3 "" H 4650 3300 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDD #PWR020
+L GNDD #PWR026
 U 1 1 5A148988
 P 4400 3150
-AR Path="/5A1481F4/5A148988" Ref="#PWR020"  Part="1" 
-AR Path="/5A150559/5A148988" Ref="#PWR024"  Part="1" 
-F 0 "#PWR020" H 4400 2900 50  0001 C CNN
+AR Path="/5A1481F4/5A148988" Ref="#PWR026"  Part="1" 
+AR Path="/5A150559/5A148988" Ref="#PWR030"  Part="1" 
+F 0 "#PWR026" H 4400 2900 50  0001 C CNN
 F 1 "GNDD" H 4400 3025 50  0000 C CNN
 F 2 "" H 4400 3150 50  0001 C CNN
 F 3 "" H 4400 3150 50  0001 C CNN
@@ -305,12 +278,12 @@ F 3 "" H 3650 3250 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDD #PWR021
+L GNDD #PWR027
 U 1 1 5A14986C
 P 2900 3150
-AR Path="/5A1481F4/5A14986C" Ref="#PWR021"  Part="1" 
-AR Path="/5A150559/5A14986C" Ref="#PWR025"  Part="1" 
-F 0 "#PWR021" H 2900 2900 50  0001 C CNN
+AR Path="/5A1481F4/5A14986C" Ref="#PWR027"  Part="1" 
+AR Path="/5A150559/5A14986C" Ref="#PWR031"  Part="1" 
+F 0 "#PWR027" H 2900 2900 50  0001 C CNN
 F 1 "GNDD" H 2900 3025 50  0000 C CNN
 F 2 "" H 2900 3150 50  0001 C CNN
 F 3 "" H 2900 3150 50  0001 C CNN
@@ -318,12 +291,12 @@ F 3 "" H 2900 3150 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDD #PWR022
+L GNDD #PWR028
 U 1 1 5A149872
 P 3650 3400
-AR Path="/5A1481F4/5A149872" Ref="#PWR022"  Part="1" 
-AR Path="/5A150559/5A149872" Ref="#PWR026"  Part="1" 
-F 0 "#PWR022" H 3650 3150 50  0001 C CNN
+AR Path="/5A1481F4/5A149872" Ref="#PWR028"  Part="1" 
+AR Path="/5A150559/5A149872" Ref="#PWR032"  Part="1" 
+F 0 "#PWR028" H 3650 3150 50  0001 C CNN
 F 1 "GNDD" H 3650 3275 50  0000 C CNN
 F 2 "" H 3650 3400 50  0001 C CNN
 F 3 "" H 3650 3400 50  0001 C CNN
@@ -385,7 +358,7 @@ AR Path="/5A1481F4/5A16CB09" Ref="J5"  Part="1"
 AR Path="/5A150559/5A16CB09" Ref="J8"  Part="1" 
 F 0 "J5" H 3850 3450 50  0000 C CNN
 F 1 "Conn_01x02_Male" H 4150 3200 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Angled_1x02_Pitch2.54mm" H 3850 3350 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x02_Pitch2.54mm" H 3850 3350 50  0001 C CNN
 F 3 "" H 3850 3350 50  0001 C CNN
 	1    3850 3350
 	1    0    0    -1  
@@ -398,7 +371,7 @@ AR Path="/5A1481F4/5A16CBE6" Ref="J6"  Part="1"
 AR Path="/5A150559/5A16CBE6" Ref="J9"  Part="1" 
 F 0 "J6" H 5200 5100 50  0000 C CNN
 F 1 "Conn_01x10_Male" H 5200 4000 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Angled_1x10_Pitch2.54mm" H 5200 4600 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x10_Pitch2.54mm" H 5200 4600 50  0001 C CNN
 F 3 "" H 5200 4600 50  0001 C CNN
 	1    5200 4600
 	1    0    0    -1  
@@ -496,7 +469,7 @@ AR Path="/5A1481F4/5A16D099" Ref="J7"  Part="1"
 AR Path="/5A150559/5A16D099" Ref="J10"  Part="1" 
 F 0 "J7" H 7700 5050 50  0000 C CNN
 F 1 "Conn_01x10_Male" H 7700 3950 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Angled_1x10_Pitch2.54mm" H 7700 4550 50  0001 C CNN
+F 2 "Pin_Headers:Pin_Header_Straight_1x10_Pitch2.54mm" H 7700 4550 50  0001 C CNN
 F 3 "" H 7700 4550 50  0001 C CNN
 	1    7700 4550
 	-1   0    0    -1  
