@@ -14,7 +14,7 @@
 *	11/22/2017
 */
 
-#include <msp430fr2311.h>
+#include <msp430.h>
 
 void initTimerB0();
 void initTimerB1();
