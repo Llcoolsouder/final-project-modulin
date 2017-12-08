@@ -1,34 +1,36 @@
 EESchema Schematic File Version 2
 LIBS:Modulin-rescue
+LIBS:74xgxx
+LIBS:74xx
 LIBS:ac-dc
+LIBS:actel
 LIBS:adc-dac
+LIBS:allegro
 LIBS:Altera
 LIBS:analog_devices
 LIBS:analog_switches
 LIBS:atmel
 LIBS:audio
-LIBS:Battery_Management
+LIBS:battery_management
 LIBS:bbd
 LIBS:bosch
 LIBS:brooktre
-LIBS:Connector
+LIBS:cmos_ieee
+LIBS:cmos4000
+LIBS:conn
 LIBS:contrib
 LIBS:cypress
 LIBS:dc-dc
 LIBS:device
 LIBS:digital-audio
-LIBS:Diode
-LIBS:Display
-LIBS:driver_gate
+LIBS:diode
+LIBS:display
 LIBS:dsp
-LIBS:DSP_Microchip_DSPIC33
 LIBS:elec-unifil
 LIBS:ESD_Protection
-LIBS:Espressif
-LIBS:FPGA_Actel
 LIBS:ftdi
 LIBS:gennum
-LIBS:Graphic
+LIBS:graphic_symbols
 LIBS:hc11
 LIBS:infineon
 LIBS:intel
@@ -36,38 +38,30 @@ LIBS:interface
 LIBS:intersil
 LIBS:ir
 LIBS:Lattice
-LIBS:LED
+LIBS:leds
 LIBS:LEM
 LIBS:linear
-LIBS:Logic_74xgxx
-LIBS:Logic_74xx
-LIBS:Logic_CMOS_4000
-LIBS:Logic_CMOS_IEEE
 LIBS:logic_programmable
-LIBS:Logic_TTL_IEEE
 LIBS:maxim
-LIBS:MCU_Microchip_PIC10
-LIBS:MCU_Microchip_PIC12
-LIBS:MCU_Microchip_PIC16
-LIBS:MCU_Microchip_PIC18
-LIBS:MCU_Microchip_PIC24
-LIBS:MCU_Microchip_PIC32
-LIBS:MCU_NXP_Kinetis
-LIBS:MCU_NXP_LPC
-LIBS:MCU_NXP_S08
-LIBS:MCU_ST_STM8
-LIBS:MCU_ST_STM32
-LIBS:MCU_Texas_MSP430
-LIBS:Mechanical
+LIBS:mechanical
 LIBS:memory
 LIBS:microchip
+LIBS:microchip_dspic33dsc
+LIBS:microchip_pic10mcu
+LIBS:microchip_pic12mcu
+LIBS:microchip_pic16mcu
+LIBS:microchip_pic18mcu
+LIBS:microchip_pic24mcu
+LIBS:microchip_pic32mcu
 LIBS:microcontrollers
 LIBS:modules
-LIBS:Motor
 LIBS:motor_drivers
 LIBS:motorola
+LIBS:motors
+LIBS:msp430
 LIBS:nordicsemi
 LIBS:nxp
+LIBS:nxp_armmcu
 LIBS:onsemi
 LIBS:opto
 LIBS:Oscillators
@@ -78,20 +72,22 @@ LIBS:powerint
 LIBS:pspice
 LIBS:references
 LIBS:regul
-LIBS:Relay
+LIBS:relays
 LIBS:rfcom
 LIBS:RFSolutions
-LIBS:Sensor_Current
 LIBS:sensors
 LIBS:silabs
 LIBS:siliconi
+LIBS:stm8
+LIBS:stm32
 LIBS:supertex
-LIBS:Switch
+LIBS:switches
 LIBS:texas
-LIBS:Transformer
-LIBS:Transistor
+LIBS:transf
+LIBS:transistors
 LIBS:triac_thyristor
-LIBS:Valve
+LIBS:ttl_ieee
+LIBS:valves
 LIBS:video
 LIBS:wiznet
 LIBS:Worldsemi
@@ -99,28 +95,6 @@ LIBS:Xicor
 LIBS:xilinx
 LIBS:zetex
 LIBS:Zilog
-LIBS:74xgxx
-LIBS:74xx
-LIBS:actel
-LIBS:cmos_ieee
-LIBS:cmos4000
-LIBS:conn
-LIBS:microchip_dspic33dsc
-LIBS:microchip_pic10mcu
-LIBS:microchip_pic12mcu
-LIBS:microchip_pic16mcu
-LIBS:microchip_pic18mcu
-LIBS:microchip_pic32mcu
-LIBS:msp430
-LIBS:nxp_armmcu
-LIBS:relays
-LIBS:stm8
-LIBS:stm32
-LIBS:switches
-LIBS:transf
-LIBS:transistors
-LIBS:ttl_ieee
-LIBS:valves
 LIBS:MyLib
 LIBS:Modulin-cache
 EELAYER 25 0
@@ -182,10 +156,10 @@ F 3 "" H 4350 3050 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L +9V #PWR049
+L +9V #PWR046
 U 1 1 5A1656C9
 P 4350 2500
-F 0 "#PWR049" H 4350 2350 50  0001 C CNN
+F 0 "#PWR046" H 4350 2350 50  0001 C CNN
 F 1 "+9V" H 4350 2640 50  0000 C CNN
 F 2 "" H 4350 2500 50  0001 C CNN
 F 3 "" H 4350 2500 50  0001 C CNN
@@ -266,10 +240,10 @@ Text GLabel 5700 3900 1    39   Input ~ 0
 DVCC
 Connection ~ 5500 3900
 $Comp
-L GNDD #PWR?
+L GNDD #PWR047
 U 1 1 5A1B3C22
 P 5500 4200
-F 0 "#PWR?" H 5500 3950 50  0001 C CNN
+F 0 "#PWR047" H 5500 3950 50  0001 C CNN
 F 1 "GNDD" H 5500 4075 50  0000 C CNN
 F 2 "" H 5500 4200 50  0001 C CNN
 F 3 "" H 5500 4200 50  0001 C CNN
@@ -280,10 +254,10 @@ Wire Wire Line
 	5250 3900 5250 4200
 Connection ~ 5500 4200
 $Comp
-L GNDD #PWR?
+L GNDD #PWR048
 U 1 1 5A1B3D6B
 P 4350 3200
-F 0 "#PWR?" H 4350 2950 50  0001 C CNN
+F 0 "#PWR048" H 4350 2950 50  0001 C CNN
 F 1 "GNDD" H 4350 3075 50  0000 C CNN
 F 2 "" H 4350 3200 50  0001 C CNN
 F 3 "" H 4350 3200 50  0001 C CNN
@@ -291,10 +265,10 @@ F 3 "" H 4350 3200 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L GNDD #PWR?
+L GNDD #PWR049
 U 1 1 5A1B3DC0
 P 6250 3000
-F 0 "#PWR?" H 6250 2750 50  0001 C CNN
+F 0 "#PWR049" H 6250 2750 50  0001 C CNN
 F 1 "GNDD" H 6250 2875 50  0000 C CNN
 F 2 "" H 6250 3000 50  0001 C CNN
 F 3 "" H 6250 3000 50  0001 C CNN

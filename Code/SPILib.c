@@ -15,26 +15,35 @@
 */
 
 #include <msp430.h>
+#include "SPILib.h"
+
 
 void initUCB0_master() {
 	//Configure P2.3, P2.4, and P2.5 for SPI
-	P2SEL1 |= BIT3 | BIT4 | BIT4;
+	P2SEL0 |= BIT3 | BIT4 | BIT5;
+	SYSCFG2 |= USCIBRMP;                      // eUSCI_B0 port remapped to P2.3-P2.5
 	UCB0CTLW0 |= UCSWRST;
 	UCB0CTLW0 |= UCMST | UCSYNC | UCSSEL_2;
 	UCB0CTLW0 &= ~UCSWRST;
-	UCBR0 = 17;		//Set baud rate to 57600
+	UCB0BR0 = 17;		//Set baud rate to 57600
 }
 
 
 void initUCB0_slave() {
 	//Configure P2.3, P2.4, and P2.5 for SPI
-	P2SEL1 |= BIT3 | BIT4 | BIT4;
+	P2SEL0 |= BIT3 | BIT4 | BIT5;
+	SYSCFG2 |= USCIBRMP;                      // eUSCI_B0 port remapped to P2.3-P2.5
 	UCB0CTLW0 |= UCSWRST;
 	UCB0CTLW0 |= UCSYNC | UCSSEL_2;
 	UCB0CTLW0 &= ~UCSWRST;
-	UCBR0 = 17;		//Set baud rate to 57600
+	UCB0BR0 = 17;		//Set baud rate to 57600
 }
 
-void sendByte(int byte) {
-	
+
+void sendByte(const struct Pin cs, char message) {
+	*cs.reg &= ~cs.bit;			// Select device
+	while (!(UCB0IFG & UCTXIFG));	// Wait until TX buf is ready
+	UCB0TXBUF = message;			// Send message
+	while (!(UCB0IFG & UCTXIFG));	// Wait until message is sent
+	*cs.reg |= cs.bit;			// Unselect device
 }

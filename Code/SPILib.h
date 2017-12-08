@@ -14,9 +14,20 @@
 *	12/01/2017
 */
 
+//Falling edge sample, LSB first
+
 #include <msp430.h>
 
 void initUCB0_master();
 void initUCB0_slave();
 
-void sendByte(int byte);
+// Struct to store information for a pin on the ucontroller.
+// "reg" is a pointer to the port's output register (i.e. &P1OUT)
+// "bit" specifies on of 8 pins on the port
+// Ex: P1.0 -> Pin{&P1OUT, BIT0}
+struct Pin {
+	volatile unsigned char * reg;
+	int bit;
+};
+
+void sendByte(const struct Pin cs, char message);
