@@ -1,9 +1,9 @@
-(kicad_pcb (version 4) (host pcbnew 4.0.7)
+(kicad_pcb (version 4) (host pcbnew 4.0.4-stable)
 
   (general
     (links 247)
     (no_connects 41)
-    (area 120.684573 60.924999 185.766428 153.745001)
+    (area 121.209999 60.924999 184.860001 153.745001)
     (thickness 1.6)
     (drawings 13)
     (tracks 865)
@@ -1272,7 +1272,7 @@
       (net 1 GNDD))
     (pad 3 thru_hole oval (at 0 5.08) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 19 +3V3))
-    (model ${KISYS3DMOD}/Pin_Headers.3dshapes/Pin_Header_Straight_1x03_Pitch2.54mm.wrl
+    (model "E:/Program Files/KiCad/share/kicad/modules/Pin_Headers.3dshapes/Pin_Header_Straight_1x03_Pitch2.54mm.wrl"
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1314,7 +1314,7 @@
       (net 5 DVCC))
     (pad 3 thru_hole oval (at 0 5.08 180) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 4 "Net-(C4-Pad1)"))
-    (model ${KISYS3DMOD}/Pin_Headers.3dshapes/Pin_Header_Straight_1x03_Pitch2.54mm.wrl
+    (model "E:/Program Files/KiCad/share/kicad/modules/Pin_Headers.3dshapes/Pin_Header_Straight_1x03_Pitch2.54mm.wrl"
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1356,7 +1356,7 @@
       (net 20 /FR2311_setup2/P1.2))
     (pad 3 thru_hole oval (at 0 5.08) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 1 GNDD))
-    (model ${KISYS3DMOD}/Pin_Headers.3dshapes/Pin_Header_Straight_1x03_Pitch2.54mm.wrl
+    (model "E:/Program Files/KiCad/share/kicad/modules/Pin_Headers.3dshapes/Pin_Header_Straight_1x03_Pitch2.54mm.wrl"
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1398,7 +1398,7 @@
       (net 21 /FR2311_setup2/P1.3))
     (pad 3 thru_hole oval (at 0 5.08) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 1 GNDD))
-    (model ${KISYS3DMOD}/Pin_Headers.3dshapes/Pin_Header_Straight_1x03_Pitch2.54mm.wrl
+    (model "E:/Program Files/KiCad/share/kicad/modules/Pin_Headers.3dshapes/Pin_Header_Straight_1x03_Pitch2.54mm.wrl"
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1438,7 +1438,7 @@
       (net 8 "Net-(C13-Pad1)"))
     (pad 2 thru_hole oval (at 0 2.54) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 9 /FR2311_setup1/~RST))
-    (model ${KISYS3DMOD}/Pin_Headers.3dshapes/Pin_Header_Straight_1x02_Pitch2.54mm.wrl
+    (model "E:/Program Files/KiCad/share/kicad/modules/Pin_Headers.3dshapes/Pin_Header_Straight_1x02_Pitch2.54mm.wrl"
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1494,7 +1494,7 @@
       (net 27 /FR2311_setup1/P2.4))
     (pad 10 thru_hole oval (at 0 22.86) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 28 /FR2311_setup1/P2.5))
-    (model ${KISYS3DMOD}/Pin_Headers.3dshapes/Pin_Header_Straight_1x10_Pitch2.54mm.wrl
+    (model "E:/Program Files/KiCad/share/kicad/modules/Pin_Headers.3dshapes/Pin_Header_Straight_1x10_Pitch2.54mm.wrl"
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1550,7 +1550,7 @@
       (net 37 /FR2311_setup1/P2.2))
     (pad 10 thru_hole oval (at 0 22.86) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 38 /FR2311_setup1/P2.3))
-    (model ${KISYS3DMOD}/Pin_Headers.3dshapes/Pin_Header_Straight_1x10_Pitch2.54mm.wrl
+    (model "E:/Program Files/KiCad/share/kicad/modules/Pin_Headers.3dshapes/Pin_Header_Straight_1x10_Pitch2.54mm.wrl"
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1590,7 +1590,7 @@
       (net 10 "Net-(C17-Pad1)"))
     (pad 2 thru_hole oval (at 0 2.54) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 11 /FR2311_setup2/~RST))
-    (model ${KISYS3DMOD}/Pin_Headers.3dshapes/Pin_Header_Straight_1x02_Pitch2.54mm.wrl
+    (model "E:/Program Files/KiCad/share/kicad/modules/Pin_Headers.3dshapes/Pin_Header_Straight_1x02_Pitch2.54mm.wrl"
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1646,7 +1646,7 @@
       (net 27 /FR2311_setup1/P2.4))
     (pad 10 thru_hole oval (at 0 22.86) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 28 /FR2311_setup1/P2.5))
-    (model ${KISYS3DMOD}/Pin_Headers.3dshapes/Pin_Header_Straight_1x10_Pitch2.54mm.wrl
+    (model "E:/Program Files/KiCad/share/kicad/modules/Pin_Headers.3dshapes/Pin_Header_Straight_1x10_Pitch2.54mm.wrl"
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1702,7 +1702,7 @@
       (net 47 /FR2311_setup2/P2.2))
     (pad 10 thru_hole oval (at 0 22.86) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask)
       (net 38 /FR2311_setup1/P2.3))
-    (model ${KISYS3DMOD}/Pin_Headers.3dshapes/Pin_Header_Straight_1x10_Pitch2.54mm.wrl
+    (model "E:/Program Files/KiCad/share/kicad/modules/Pin_Headers.3dshapes/Pin_Header_Straight_1x10_Pitch2.54mm.wrl"
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1911,7 +1911,7 @@
       (net 1 GNDD))
     (pad 6 smd rect (at 0.95 -0.65) (size 0.65 0.4) (layers F.Cu F.Paste F.Mask)
       (net 1 GNDD))
-    (model ${KISYS3DMOD}/TO_SOT_Packages_SMD.3dshapes/SOT-363_SC-70-6.wrl
+    (model "E:/Program Files/KiCad/share/kicad/modules/TO_SOT_Packages_SMD.3dshapes/SOT-363_SC-70-6.wrl"
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -1953,7 +1953,7 @@
     (pad 4 smd rect (at 0.95 0.65 180) (size 0.65 0.4) (layers F.Cu F.Paste F.Mask))
     (pad 6 smd rect (at 0.95 -0.65 180) (size 0.65 0.4) (layers F.Cu F.Paste F.Mask)
       (net 60 "Net-(Q2-Pad6)"))
-    (model ${KISYS3DMOD}/TO_SOT_Packages_SMD.3dshapes/SOT-363_SC-70-6.wrl
+    (model "E:/Program Files/KiCad/share/kicad/modules/TO_SOT_Packages_SMD.3dshapes/SOT-363_SC-70-6.wrl"
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -2752,44 +2752,6 @@
     )
   )
 
-  (module MyLib:FSM2JSMAATR (layer F.Cu) (tedit 5A185815) (tstamp 5A16F429)
-    (at 134.239 72.771)
-    (path /5A1481F4/5A149849)
-    (fp_text reference SW1 (at -2.159 4.318) (layer F.SilkS)
-      (effects (font (size 0.5 0.5) (thickness 0.075)))
-    )
-    (fp_text value SW_Push (at 0 -3.5) (layer F.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.075)))
-    )
-    (pad 1 smd rect (at 0 0) (size 1.4 2.1) (layers F.Cu F.Paste F.Mask)
-      (net 1 GNDD))
-    (pad 1 smd rect (at 0 9.1) (size 1.4 2.1) (layers F.Cu F.Paste F.Mask)
-      (net 1 GNDD))
-    (pad 2 smd rect (at -4.5 0) (size 1.4 2.1) (layers F.Cu F.Paste F.Mask)
-      (net 61 "Net-(R1-Pad2)"))
-    (pad 2 smd rect (at -4.5 9.1) (size 1.4 2.1) (layers F.Cu F.Paste F.Mask)
-      (net 61 "Net-(R1-Pad2)"))
-  )
-
-  (module MyLib:FSM2JSMAATR (layer F.Cu) (tedit 5A1863C2) (tstamp 5A16F431)
-    (at 129.794 94.488 180)
-    (path /5A150559/5A149849)
-    (fp_text reference SW2 (at -2.413 4.953 180) (layer F.SilkS)
-      (effects (font (size 0.5 0.5) (thickness 0.075)))
-    )
-    (fp_text value SW_Push (at 0 -3.5 180) (layer F.Fab) hide
-      (effects (font (size 0.5 0.5) (thickness 0.075)))
-    )
-    (pad 1 smd rect (at 0 0 180) (size 1.4 2.1) (layers F.Cu F.Paste F.Mask)
-      (net 1 GNDD))
-    (pad 1 smd rect (at 0 9.1 180) (size 1.4 2.1) (layers F.Cu F.Paste F.Mask)
-      (net 1 GNDD))
-    (pad 2 smd rect (at -4.5 0 180) (size 1.4 2.1) (layers F.Cu F.Paste F.Mask)
-      (net 62 "Net-(R4-Pad2)"))
-    (pad 2 smd rect (at -4.5 9.1 180) (size 1.4 2.1) (layers F.Cu F.Paste F.Mask)
-      (net 62 "Net-(R4-Pad2)"))
-  )
-
   (module Analog_Devices:AD9837BCPZ-RL7 (layer F.Cu) (tedit 5A184C89) (tstamp 5A16F466)
     (at 143.891 111.379)
     (path /5A0CCE18)
@@ -3246,7 +3208,7 @@
       (net 63 "Net-(R7-Pad2)"))
     (pad 6 smd rect (at 0.95 -0.65 270) (size 0.65 0.4) (layers F.Cu F.Paste F.Mask)
       (net 70 "Net-(U8-Pad3)"))
-    (model ${KISYS3DMOD}/TO_SOT_Packages_SMD.3dshapes/SOT-363_SC-70-6.wrl
+    (model "E:/Program Files/KiCad/share/kicad/modules/TO_SOT_Packages_SMD.3dshapes/SOT-363_SC-70-6.wrl"
       (at (xyz 0 0 0))
       (scale (xyz 1 1 1))
       (rotate (xyz 0 0 0))
@@ -3417,7 +3379,7 @@
       (net 1 GNDD))
     (pad 3 thru_hole oval (at 5.08 0) (size 1.8 1.8) (drill 1) (layers *.Cu *.Mask)
       (net 3 +5V))
-    (model ${KISYS3DMOD}/TO_SOT_Packages_THT.3dshapes/TO-220-3_Vertical.wrl
+    (model ${KISYS3DMOD}/TO_SOT_Packages_THT.3dshapes/TO-220_Neutral123_Vertical.wrl
       (at (xyz 0.1 0 0))
       (scale (xyz 0.393701 0.393701 0.393701))
       (rotate (xyz 0 0 0))
@@ -3462,10 +3424,58 @@
       (net 4 "Net-(C4-Pad1)"))
     (pad 3 thru_hole oval (at 5.08 0) (size 1.8 1.8) (drill 1) (layers *.Cu *.Mask)
       (net 2 +9V))
-    (model ${KISYS3DMOD}/TO_SOT_Packages_THT.3dshapes/TO-220-3_Vertical.wrl
+    (model ${KISYS3DMOD}/TO_SOT_Packages_THT.3dshapes/TO-220_Neutral123_Vertical.wrl
       (at (xyz 0.1 0 0))
       (scale (xyz 0.393701 0.393701 0.393701))
       (rotate (xyz 0 0 0))
+    )
+  )
+
+  (module MyLib:FSM2JSMAATR (layer F.Cu) (tedit 5A2C3507) (tstamp 5A16F431)
+    (at 129.794 94.488 180)
+    (path /5A150559/5A149849)
+    (fp_text reference SW2 (at -2.286 4.318 180) (layer F.SilkS)
+      (effects (font (size 1 1) (thickness 0.05)))
+    )
+    (fp_text value SW_Push (at 0 -3.5 180) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.05)))
+    )
+    (pad 1 smd rect (at 0 0 180) (size 1.4 2.1) (layers F.Cu F.Paste F.Mask)
+      (net 1 GNDD))
+    (pad 1 smd rect (at 0 9.1 180) (size 1.4 2.1) (layers F.Cu F.Paste F.Mask)
+      (net 1 GNDD))
+    (pad 2 smd rect (at -4.5 0 180) (size 1.4 2.1) (layers F.Cu F.Paste F.Mask)
+      (net 62 "Net-(R4-Pad2)"))
+    (pad 2 smd rect (at -4.5 9.1 180) (size 1.4 2.1) (layers F.Cu F.Paste F.Mask)
+      (net 62 "Net-(R4-Pad2)"))
+    (model Buttons_Switches_SMD.3dshapes/SW_SPST_PTS645.wrl
+      (at (xyz -0.08749999999999999 -0.18 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 90))
+    )
+  )
+
+  (module MyLib:FSM2JSMAATR (layer F.Cu) (tedit 5A2C350D) (tstamp 5A16F429)
+    (at 134.239 72.771)
+    (path /5A1481F4/5A149849)
+    (fp_text reference SW1 (at -2.413 4.445) (layer F.SilkS)
+      (effects (font (size 1 1) (thickness 0.05)))
+    )
+    (fp_text value SW_Push (at 0 -3.5) (layer F.Fab) hide
+      (effects (font (size 1 1) (thickness 0.05)))
+    )
+    (pad 1 smd rect (at 0 0) (size 1.4 2.1) (layers F.Cu F.Paste F.Mask)
+      (net 1 GNDD))
+    (pad 1 smd rect (at 0 9.1) (size 1.4 2.1) (layers F.Cu F.Paste F.Mask)
+      (net 1 GNDD))
+    (pad 2 smd rect (at -4.5 0) (size 1.4 2.1) (layers F.Cu F.Paste F.Mask)
+      (net 61 "Net-(R1-Pad2)"))
+    (pad 2 smd rect (at -4.5 9.1) (size 1.4 2.1) (layers F.Cu F.Paste F.Mask)
+      (net 61 "Net-(R1-Pad2)"))
+    (model Buttons_Switches_SMD.3dshapes/SW_SPST_PTS645.wrl
+      (at (xyz -0.08749999999999999 -0.18 0))
+      (scale (xyz 1 1 1))
+      (rotate (xyz 0 0 90))
     )
   )
 
