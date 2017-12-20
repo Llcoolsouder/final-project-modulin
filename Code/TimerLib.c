@@ -46,6 +46,7 @@ void initTimerB1(){
 
 // Returns the number to which CCR0 should be set in order to
 // achieve a desired frequency for a PWM signal.
+/*
 int setFrequency(enum CLK source, int frequency){
 	if (source == ACLK) {
 		return fACLK/frequency;
@@ -56,6 +57,8 @@ int setFrequency(enum CLK source, int frequency){
 	else
 		return 0;
 }
+*/
+
 
 // Returns the number to which CCRn should be set in order
 // to achieve a desired duty cycle (Set/Reset mode)

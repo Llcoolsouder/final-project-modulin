@@ -31,6 +31,7 @@ int main(void)
 	P1IES |= BIT1;	// set interrupt on falling edge
 
 	initUCB0_master();
+	initWaveGen();
 
 	// Disable the GPIO power-on default high-impedance mode to activate
 	// previously configured port settings
@@ -57,7 +58,7 @@ int main(void)
 #pragma vector = PORT1_VECTOR
 __interrupt void PORT_1(void) {
 	//toggleRegister(&P1OUT, BIT0);
-	sendBytes(p1_0, messageA, sizeof(messageA));
+	setFrequency(440);
 	//messageB++;
 	P1IFG &= ~BIT1;
 }

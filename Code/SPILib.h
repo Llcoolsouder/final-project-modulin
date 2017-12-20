@@ -36,8 +36,5 @@ void sendByte(const struct Pin cs, char message);
 void sendBytes(const struct Pin cs, char* message, int size);
 
 //Wave Generator
-const struct Pin p2_6 = {&P2OUT, BIT6};			// Chip Select
-char reset[2] = {0b00100001, 0b00001010};	// Message to reset chip
-char set[2] = {0b00100000, 0b00001010};	// Message to take chip out of reset mode
-
 void initWaveGen();
+void setFrequency(int freq);

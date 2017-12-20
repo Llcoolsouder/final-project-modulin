@@ -65,9 +65,30 @@ void sendBytes(const struct Pin cs, char* message, int size) {
 
 
 // Wave Generator
+const struct Pin p2_6 = {&P2OUT, BIT6};			// Chip Select
+char reset[2] = {0b00100001, 0b00001010};	// Message to reset chip
+char set[2] = {0b00100000, 0b00001010};	// Message to take chip out of reset mode
+
 void initWaveGen() {
+	P1SEL1 |= BIT0;	// Select SMCLK output
+	P1DIR |= BIT0;
 	P2OUT |= BIT6;	// Set to output, idle high
 	P2DIR |= BIT6;
 	sendBytes(p2_6, reset, 2);
 	sendBytes(p2_6, set, 2);
 }
+
+
+void setFrequency(int freq) {
+// fo = f_MCLK/2^28 * FREQREG
+// fo = 1M/2^28 * FREQREG
+// FREQREG = 268 * fo
+int fo = freq * 268;	// Get reg value
+int foLSB = (fo & 0x03FF) | 0x4000;
+int foMSB = ((fo & 0x0B00) >> 14) | 0x4000;
+char fmessage[6] = {0b00100000, 0b00101010,				// Turns on output (triangle wave)
+					(foLSB & 0x00FF), (foLSB & 0xFF00), // Sets FREQ0 LSB
+					(foMSB & 0x00FF), (foMSB & 0xFF00)};// Sets FREQ0 MSB
+sendBytes(p2_6, fmessage, 6);
+}
+
