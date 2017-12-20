@@ -41,9 +41,33 @@ void initUCB0_slave() {
 
 
 void sendByte(const struct Pin cs, char message) {
-	*cs.reg &= ~cs.bit;			// Select device
+	*cs.reg &= ~cs.bit;				// Select device
 	while (!(UCB0IFG & UCTXIFG));	// Wait until TX buf is ready
 	UCB0TXBUF = message;			// Send message
 	while (!(UCB0IFG & UCTXIFG));	// Wait until message is sent
-	*cs.reg |= cs.bit;			// Unselect device
+	*cs.reg |= cs.bit;				// Unselect device
+}
+
+
+void sendBytes(const struct Pin cs, char* message, int size) {
+	*cs.reg &= ~cs.bit;					// Select device
+	int i;
+	char* start = message;				// Mark start of message
+	for (i = 0; i <= size; i++){
+		while (!(UCB0IFG & UCTXIFG));	// Wait until TX buf is ready
+		UCB0TXBUF = *message;			// Send message
+		while (!(UCB0IFG & UCTXIFG));	// Wait until message is sent
+		message++;
+	}
+	message = start;
+	*cs.reg |= cs.bit;					// Select device
+}
+
+
+// Wave Generator
+void initWaveGen() {
+	P2OUT |= BIT6;	// Set to output, idle high
+	P2DIR |= BIT6;
+	sendBytes(p2_6, reset, 2);
+	sendBytes(p2_6, set, 2);
 }

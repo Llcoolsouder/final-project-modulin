@@ -1,0 +1,1 @@
+"./EncoderLib.obj" "./SPILib.obj" "./TimerLib.obj" "./main.obj" "../lnk_msp430fr2311.cmd" -llibc.a 
